@@ -52,9 +52,13 @@ int main(int argc, char *argv[])
 
     if (help || argc == 1) {
         printf("xmwpt [-h|-v|-s WIN|-u WIN]\n\
-example:\n\
-    xmwpt -s WIN\tset passthrough shape for window WIN\n\
-    xmwpt -u WIN\tunset shape\n");
+\n\
+OPTIONS:\n\
+    -h            show this help\n\
+    -v            show version\n\
+    -s WIN        set passthrough shape for window WIN\n\
+    -u WIN        unset shape");
+
         exit(EXIT_SUCCESS);
         return 0;
     }
